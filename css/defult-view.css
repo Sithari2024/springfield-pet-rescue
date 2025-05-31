@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-image: url(../img/bg-img.png);
+  }
+  
+  .post-container {
+    max-width: 800px;
+    margin: 3rem auto;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: .5rem;
+  }
+  
+  .post {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .post-header {
+    background-color: #333;
+    padding: 30px;
+    color: #fff;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .post-title {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .post-date {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .post-content {
+    padding: 30px;
+    color: #333;
+    background-color: #E4F6F8;
+    text-align: center;
+  }
+  
+  .image-container {
+    margin-bottom: 30px;
+  }
+  
+  .pet-image {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .post-summary {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #2c3e50;
+  }
+  
+  .post-district, .post-contact {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: #34495e;
+  }
+  
+  .post-body {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #2c3e50;
+  }
+  
+  .error-message {
+    color: #e74c3c;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 30px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .post-container {
+      margin: 1rem;
+      border-radius: 10px;
+    }
+  
+    .post-title {
+      font-size: 2rem;
+    }
+  
+    .post-summary {
+      font-size: 1.1rem;
+    }
+  
+    .post-body {
+      font-size: 0.95rem;
+    }
+  }

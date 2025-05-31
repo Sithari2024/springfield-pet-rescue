@@ -1,0 +1,337 @@
+:root {
+  --primary: #6C63FF;
+  --secondary: #FF6584;
+  --accent: #4FD1C5;
+  --dark: #2D3748;
+  --light: #F7FAFC;
+  --text: #4A5568;
+  --card-bg: #FFFFFF;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+              url('../img/hero-pets.jpg') center/cover no-repeat;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  margin-bottom: 3rem;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.3rem;
+  opacity: 0.9;
+}
+
+/* Main Container */
+.support-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem 4rem;
+}
+
+/* About Section */
+.about-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 4rem;
+  align-items: center;
+}
+
+.about-content h2 {
+  font-size: 2.2rem;
+  color: var(--dark);
+  margin-bottom: 1.5rem;
+}
+
+.about-content p {
+  color: var(--text);
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.rounded-image {
+  border-radius: 15px;
+  box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);
+  width: 100%;
+  height: auto;
+}
+
+/* Mission Section */
+.mission-section {
+  margin-bottom: 4rem;
+}
+
+.mission-card {
+  background: white;
+  padding: 3rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.mission-icon {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.mission-card h2 {
+  font-size: 2rem;
+  color: var(--dark);
+  margin-bottom: 1rem;
+}
+
+.mission-card p {
+  color: var(--text);
+  line-height: 1.7;
+  font-size: 1.1rem;
+}
+
+/* Support Options */
+.section-title {
+  text-align: center;
+  font-size: 2.2rem;
+  color: var(--dark);
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary), var(--accent));
+}
+
+.support-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.support-card {
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.support-card:hover {
+  transform: translateY(-5px);
+}
+
+.support-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.support-card h3 {
+  font-size: 1.5rem;
+  color: var(--dark);
+  margin-bottom: 1rem;
+}
+
+.support-card p {
+  color: var(--text);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+/* Donation Card */
+.donation-amounts {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.amount-option {
+  padding: 0.8rem 1.5rem;
+  background: rgba(108, 99, 255, 0.1);
+  border: none;
+  border-radius: 8px;
+  color: var(--primary);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.amount-option:hover {
+  background: var(--primary);
+  color: white;
+}
+
+.donation-form .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.donation-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--dark);
+}
+
+.donation-form input {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1px solid #E2E8F0;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.donate-btn {
+  width: 100%;
+  padding: 1rem;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.donate-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(108, 99, 255, 0.3);
+}
+
+/* Event Card */
+.event-ideas {
+  margin-bottom: 1.5rem;
+}
+
+.event-ideas h4 {
+  color: var(--dark);
+  margin-bottom: 0.5rem;
+}
+
+.event-ideas ul {
+  color: var(--text);
+  padding-left: 1.2rem;
+  line-height: 1.8;
+}
+
+.event-btn {
+  width: 100%;
+  padding: 1rem;
+  background: white;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.event-btn:hover {
+  background: var(--primary);
+  color: white;
+}
+
+/* Sponsor Card */
+.sponsor-levels {
+  margin-bottom: 1.5rem;
+}
+
+.level {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px dashed #E2E8F0;
+}
+
+.level h4 {
+  color: var(--dark);
+  margin-bottom: 0.3rem;
+}
+
+.level p {
+  color: var(--text);
+  font-size: 0.9rem;
+}
+
+.sponsor-btn {
+  width: 100%;
+  padding: 1rem;
+  background: var(--secondary);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.sponsor-btn:hover {
+  background: #e0556d;
+  transform: translateY(-2px);
+}
+
+/* Impact Section */
+.impact-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.stat {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  color: var(--text);
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    height: 300px;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+  
+  .about-section {
+    grid-template-columns: 1fr;
+  }
+  
+  .support-options {
+    grid-template-columns: 1fr;
+  }
+}

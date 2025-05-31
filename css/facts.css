@@ -1,0 +1,375 @@
+:root {
+  --primary: #6C63FF;
+  --secondary: #FF6584;
+  --accent: #4FD1C5;
+  --dark: #2D3748;
+  --light: #F7FAFC;
+  --text: #4A5568;
+  --card-bg: #FFFFFF;
+  --kids-bg: #F0F7FF;
+  --adults-bg: #FFF5F7;
+}
+
+.pet-facts-hero {
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  color: white;
+  text-align: center;
+  padding: 5rem 1rem;
+  margin-bottom: 3rem;
+  padding-top: 10%;
+}
+
+.pet-facts-hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.pet-facts-hero p {
+  font-size: 1.3rem;
+  opacity: 0.9;
+}
+
+.facts-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem 4rem;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-header h2 {
+  font-size: 2.2rem;
+  color: var(--dark);
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.section-header .icon {
+  font-size: 1.8rem;
+}
+
+.section-header p {
+  color: var(--text);
+  font-size: 1.1rem;
+}
+
+/* Kids Section */
+.kids-section {
+  background-color: var(--kids-bg);
+  padding: 3rem 2rem;
+  border-radius: 15px;
+  margin-bottom: 3rem;
+}
+
+.fact-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.fact-card {
+  background: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.fact-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.fact-card h3 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.fact-card p {
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.fun-facts {
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.fun-facts h3 {
+  color: var(--secondary);
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.fun-facts ul {
+  columns: 2;
+  column-gap: 2rem;
+}
+
+.fun-facts li {
+  margin-bottom: 0.8rem;
+  color: var(--text);
+  line-height: 1.6;
+  break-inside: avoid;
+}
+
+/* Adults Section */
+.adults-section {
+  background-color: var(--adults-bg);
+  padding: 3rem 2rem;
+  border-radius: 15px;
+  margin-bottom: 3rem;
+}
+
+.adoption-rules {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.rule-card {
+  background: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.rule-card h3 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 0.5rem;
+}
+
+.rule-card ul, .rule-card ol {
+  color: var(--text);
+  padding-left: 1.2rem;
+  line-height: 1.8;
+}
+
+.rule-card li {
+  margin-bottom: 0.5rem;
+}
+
+.pet-selection-guide {
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.pet-selection-guide h3 {
+  text-align: center;
+  color: var(--secondary);
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
+.selection-factors {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.factor {
+  background: rgba(108, 99, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 10px;
+  border-left: 4px solid var(--accent);
+}
+
+.factor h4 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.factor p {
+  color: var(--text);
+  line-height: 1.7;
+}
+
+/* Pet Facts Section */
+.species-facts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.species-card {
+  background: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.species-card h3 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  text-align: center;
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 0.5rem;
+}
+
+.species-card ul {
+  color: var(--text);
+  padding-left: 1.2rem;
+  line-height: 1.8;
+}
+
+.species-card li {
+  margin-bottom: 0.8rem;
+  position: relative;
+}
+
+.species-card li::before {
+  content: '•';
+  color: var(--accent);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+@media (max-width: 768px) {
+  .pet-facts-hero h1 {
+    font-size: 2.2rem;
+  }
+  
+  .fun-facts ul {
+    columns: 1;
+  }
+  
+  .section-header h2 {
+    font-size: 1.8rem;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+}
+
+/* Fancy Animations */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Apply Animations */
+.pet-facts-hero {
+  animation: fadeInScale 1s ease-out forwards;
+}
+
+.section-header {
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+.fact-card,
+.rule-card,
+.factor,
+.species-card {
+  opacity: 0;
+  animation: fadeInUp 0.6s ease-out forwards;
+  animation-delay: 0.2s;
+}
+
+.facts-container,
+.kids-section,
+.adults-section,
+.fun-facts,
+.pet-selection-guide {
+  animation: fadeInScale 0.8s ease-out forwards;
+}
+
+/* Staggered animation on card grids */
+.fact-card:nth-child(1),
+.rule-card:nth-child(1),
+.species-card:nth-child(1),
+.factor:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.fact-card:nth-child(2),
+.rule-card:nth-child(2),
+.species-card:nth-child(2),
+.factor:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.fact-card:nth-child(3),
+.rule-card:nth-child(3),
+.species-card:nth-child(3),
+.factor:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.fact-card:nth-child(4),
+.rule-card:nth-child(4),
+.species-card:nth-child(4),
+.factor:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+/* Hover effect: glow + slight scale */
+.fact-card:hover,
+.rule-card:hover,
+.factor:hover,
+.species-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
