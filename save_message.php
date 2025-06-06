@@ -11,7 +11,7 @@ if (isset($_POST['save'])) {
                     VALUES ('$username', '$email', '$subject', '$content')";
 
     if ($connection->query($insertQuery) === TRUE) {
-        header("Location: contact.php"); // You can change this to contact_Us.php if that's your main contact page
+        header("Location: contact.php"); 
         exit();
     } else {
         echo "Error: " . $connection->error;

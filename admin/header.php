@@ -17,7 +17,7 @@
                 <li class="nav-item"><a href="../admin/index.php" class="nav-link">Posts</a></li>
                 <li class="nav-item"><a href="../admin/dashboard.php" class="nav-link">Dashboard</a></li>
                 <li class="nav-item"><a href="../admin/signup.php" class="nav-link">Add New Members</a></li>
-                <li class="nav-item"><a href="../admin/massage.php" class="nav-link">Messages</a></li>
+                <li class="nav-item"><a href="../admin/message.php" class="nav-link">Messages</a></li>
                 <li class="nav-item"><a href="../admin/admin_donations.php" class="nav-link">Donations</a></li>
                 <li class="nav-item"><a href="../users/logout.php" class="nav-link active">Logout</a></li>
             </ul>

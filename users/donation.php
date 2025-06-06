@@ -17,7 +17,7 @@
       <p>Today, we operate a network of foster homes, run adoption programs, and provide medical care to hundreds of animals each year...</p>
     </div>
     <div class="about-image">
-      <img src="../img/rescue-team.jpg" alt="Springfield Pet Rescue team smiling with rescued animals" class="rounded-image">
+      <img src="../img/adopt3.jpg" alt="Springfield Pet Rescue team smiling with rescued animals" class="rounded-image">
     </div>
   </section>
 
@@ -31,9 +31,10 @@
   </section>
 
   <!-- Support Options -->
-  <section class="support-options" aria-labelledby="how-help-heading">
-    <h2 id="how-help-heading" class="section-title">How You Can Help</h2>
+<section class="support-options" aria-labelledby="how-help-heading">
+  <h2 id="how-help-heading" class="section-title">How You Can Help</h2>
 
+  <div class="support-row">
     <!-- Donation Card -->
     <article class="support-card donation-card" aria-labelledby="donate-heading">
       <div class="support-icon" aria-hidden="true">💖</div>
@@ -103,7 +104,8 @@
 
       <button class="sponsor-btn">Learn About Sponsorship</button>
     </article>
-  </section>
+  </div>
+</section>
 
   <!-- Impact Stats -->
   <section class="impact-section" aria-labelledby="impact-heading">

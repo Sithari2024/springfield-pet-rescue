@@ -302,3 +302,84 @@
     margin-bottom: 0.5rem;
   }
 }
+@media (max-width: 480px) {
+  .admin-container {
+    padding: 0 1rem;
+    padding-top: 20%;
+  }
+
+  .admin-container h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .admin-controls {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+  }
+
+  .search-filter {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .search-filter input,
+  .search-filter select {
+    font-size: 0.9rem;
+    width: 100%;
+  }
+
+  .export-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .donation-stats {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .stat-card {
+    padding: 1rem;
+  }
+
+  .stat-value {
+    font-size: 1.4rem;
+  }
+
+  .donations-table th,
+  .donations-table td {
+    font-size: 0.8rem;
+    padding: 0.5rem;
+  }
+
+  .action-btn {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.75rem;
+    display: block;
+    width: 100%;
+    margin: 0.25rem 0;
+  }
+
+  .pagination {
+    flex-wrap: wrap;
+    gap: 0.25rem;
+  }
+
+  .page-btn {
+    padding: 0.4rem 0.75rem;
+    font-size: 0.85rem;
+  }
+
+  .modal-content {
+    width: 95%;
+    padding: 1.5rem;
+  }
+
+  .close-modal {
+    font-size: 1.25rem;
+    top: 0.75rem;
+    right: 0.75rem;
+  }
+}

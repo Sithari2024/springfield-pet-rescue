@@ -18,7 +18,8 @@
             <ul class="nav-menu">
                 <li class="nav-item"><a href="index.php" class="nav-link">Home</a></li>
                 <li class="nav-item"><a href="about_us.php" class="nav-link">About Us</a></li>
-                <li class="nav-item"><a href="facts.php" class="nav-link">Facts</a></li>
+                <li class="nav-item"><a href="http://localhost:3000" class="nav-link">Pet Facts</a></li>
+
                 <li class="nav-item"><a href="contact.php" class="nav-link">Contact Us</a></li>
                 <li class="nav-item"><a href="users/login.php" class="nav-link active">Login</a></li>
             </ul>

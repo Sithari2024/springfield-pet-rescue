@@ -19,7 +19,6 @@
                 <option value="month">This Month</option>
             </select>
         </div>
-        <button class="export-btn">Export to CSV</button>
     </div>
 
     <div class="donation-stats">
@@ -108,7 +107,6 @@
                         <button class="action-btn retry-btn">Retry</button>
                     </td>
                 </tr>
-                <!-- More rows would be generated from database -->
             </tbody>
         </table>
     </div>
@@ -128,7 +126,6 @@
         <span class="close-modal">&times;</span>
         <h2>Donation Details</h2>
         <div class="modal-body">
-            <!-- Content would be loaded via AJAX -->
         </div>
     </div>
 </div>

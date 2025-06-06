@@ -9,15 +9,14 @@
 }
 
 .contact-hero {
-  position: relative;
-  height: 300px;
-  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
-              url('../img/contact-hero.jpg') center/cover no-repeat;
+   position: relative;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  height: 400px;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
   color: white;
+  text-align: center;
   margin-bottom: 4rem;
   padding-top: 10%;
 }

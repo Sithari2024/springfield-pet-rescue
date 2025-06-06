@@ -1,11 +1,13 @@
 <?php
-include '../connect.php'; 
-include '../admin/header.php'; ?>
-
+include '../connect.php';
+include '../admin/header.php';
+?>
 
 <!doctype html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <title>Messages</title>
     <link rel="stylesheet" href="dashboard.css">
 </head>
 <body>
@@ -30,20 +32,20 @@ include '../admin/header.php'; ?>
                 <?php
                 $selectQuery = "SELECT * FROM message";
                 $result = mysqli_query($connection, $selectQuery);
+
                 if ($result) {
                     while ($row = mysqli_fetch_array($result)) {
                         ?>
                         <tr>
                             <td><?php echo htmlspecialchars($row['id']); ?></td>
                             <td><?php echo htmlspecialchars($row['username'] ?? ''); ?></td>
-							<td><?php echo htmlspecialchars($row['email'] ?? ''); ?></td>
-							<td><?php echo htmlspecialchars($row['subject'] ?? ''); ?></td>
-							<td><?php echo htmlspecialchars($row['content'] ?? ''); ?></td>
-
+                            <td><?php echo htmlspecialchars($row['email'] ?? ''); ?></td>
+                            <td><?php echo htmlspecialchars($row['subject'] ?? ''); ?></td>
+                            <td><?php echo htmlspecialchars($row['content'] ?? ''); ?></td>
                             <td>
-                                <form action='delete_message.php' method='POST'>
-                                    <input type='hidden' name='id' value='<?php echo $row['id']; ?>'>
-                                    <input type='submit' name='submitButton' value='Delete'>
+                                <form action="delete_message.php" method="POST" onsubmit="return confirm('Are you sure you want to delete this message?');">
+                                    <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
+                                    <input type="submit" name="submitButton" value="Delete">
                                 </form>
                             </td>
                         </tr>
@@ -57,6 +59,7 @@ include '../admin/header.php'; ?>
         </table>
     </div>
 </div>
+
 <?php include 'footer.php'; ?>
 </body>
 </html>

@@ -9,15 +9,15 @@
 
 .about-hero {
   position: relative;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
   height: 400px;
-  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
-              url('img/adopt3.jpg') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   text-align: center;
   margin-bottom: 4rem;
+  padding-top: 10%;
 }
 
 .hero-content {
@@ -317,4 +317,86 @@
 .stat-item:hover {
   transform: translateY(-5px);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+/* Tablet adjustments (768px and below) */
+@media (max-width: 768px) {
+  .about-hero {
+    height: auto;
+    padding: 5rem 1rem;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .about-section,
+  .mission-section {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .about-section .about-image,
+  .about-section .section-content {
+    order: unset;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .mission-icon {
+    margin-bottom: 1rem;
+  }
+
+  .mission-card {
+    padding: 2rem 1rem;
+  }
+}
+
+/* Mobile adjustments (480px and below) */
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .about-container {
+    padding: 0 1rem;
+  }
+
+  .values-grid,
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .value-card,
+  .stat-item,
+  .mission-card {
+    padding: 1.5rem 1rem;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .section-title::after {
+    width: 40px;
+  }
+
+  .section-content {
+    font-size: 1rem;
+  }
 }
